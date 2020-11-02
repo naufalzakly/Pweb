@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuansa.co</title>
+    <link rel="stylesheet" href="info_wisata.css">
+</head>
+
+<body>
+    <form class="box" action="info_wisata.php" method="POST">
+        <h1>Info wisata Jember</h1>
+
+        <label>Nama Wisata:</label>
+        <input type="text" name="Nama Wisata" placeholder="Nama Wisata..." required='required' autocomplete="off" />
+
+        <label>Category</label>
+        <br><select class="select">
+            <option value=''>pilih category...</option><option value='a'>Pantai</option>
+            <option value='b'>Pengunungan</option><option value='c'>Taman</option>
+        </select></br>
+
+        <label>Jarak dari kota jember</label>
+        <br><select class='select'>
+        <option value=''>pilih jarak...</option>
+        <option value='a'>1km-5km</option>
+        <option value='b'>6km-10km</option>
+        <option value='c'>11km-15km</option>
+        </select></br>
+
+        <label><input type="checkbox" name="remember" value="remember" /> Remember me</label>
+        <input type="submit" name="submit" value="Cari" />
+
+    </form>
+</body>
+
+</html>
