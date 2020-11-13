@@ -20,13 +20,10 @@ body {
 
 #nuansa {
     float: center;
-    color: #6B8E23;
     color: #3E7B65;
     margin-right: 30px;
     margin-left: 550px;
     text-align: center;
-    font-family: monospace;
-    font-style: italic;
     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-style: bold;
     font-size: 36pt;
