@@ -1,5 +1,5 @@
 body {
-    background-image: url("image/home.png");
+    background-image: url("image/wisata.png");
     height: 90%;
     background-position: top;
     background-repeat: no-repeat;
@@ -80,7 +80,6 @@ body {
 .explore {
     text-align: left;
     margin: 100px 50px 20px 200px;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 #judul {
@@ -91,7 +90,6 @@ body {
 }
 
 #line {
-	color: #EDB000;
     padding: 40px;
     width: 50%;
     text-align: center;
