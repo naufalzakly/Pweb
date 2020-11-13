@@ -81,27 +81,12 @@
     #gambar2,
     #gambar3 {
         float: center;
-        flex: space-evenly;
         width: 300px;
         margin-top: 200px;
         margin-bottom: 20px;
         margin-right: 0px;
         margin-left: 100px;
         border-radius: 50%;
-        border: 9px solid #ccc92e;
-    }
-    
-    .foto button[type=submit] {
-        padding: 2px;
-        background: none;
-        margin-top: 110px;
-        margin-bottom: 100px;
-        margin-right: 0px;
-        margin-left: 10px;
-        border-radius: 50%;
-        width: 50px;
-        color: black;
-        border-radius: 24px;
         border: 9px solid #EDB000;
     }
     
