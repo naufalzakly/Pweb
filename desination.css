@@ -89,11 +89,3 @@
         border-radius: 50%;
         border: 9px solid #EDB000;
     }
-    
-    @media screen and (max-width: 500px) {
-        .navbar a,
-        .search a {
-            float: none;
-            display: block;
-        }
-    }

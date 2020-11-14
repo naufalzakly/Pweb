@@ -146,11 +146,3 @@ body {
 .active {
     background-color: pink;
 }
-
-@media screen and (max-width: 500px) {
-    .navbar a,
-    .search a {
-        float: none;
-        display: block;
-    }
-}
