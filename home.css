@@ -8,7 +8,7 @@ body {
     padding-bottom: 10px;
 }
 
-.navba {
+.navbar {
     width: 100%;
     overflow: auto;
 }
@@ -134,12 +134,4 @@ body {
 .google {
     background: #dd4b39;
     color: white;
-}
-
-@media screen and (max-width: 500px) {
-    .navbar a,
-    .search a {
-        float: none;
-        display: block;
-    }
 }
