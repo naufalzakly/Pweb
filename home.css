@@ -18,7 +18,33 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
-    margin-left: 200px;
+    margin-left: 170px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #EDB000;
+    display: block;
+}
+
+.navbar ul li:hover ul {
+    display: block;
+}
+
+.navbar ul ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    left: 300px;
+    top: 50px;
+    width: 190px;
+}
+
+.navbar ul ul li a:hover {
+    color: black;
 }
 
 .search a {
