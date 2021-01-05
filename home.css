@@ -20,7 +20,45 @@ body {
     margin-right: 10px;
     margin-left: 170px;
 }
+/* The dropdown container */
+.dropdown {
+  overflow: hidden;
+}
 
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 20px 20px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 170px;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #EDB000;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*
 .navbar ul {
     list-style: none;
 }
@@ -39,14 +77,14 @@ body {
     list-style: none;
     position: absolute;
     left: 300px;
-    top: 50px;
+    top: 70px;
     width: 190px;
 }
 
 .navbar ul ul li a:hover {
     color: black;
 }
-
+*/
 .search a {
     float: center;
     padding: 30px;
@@ -101,12 +139,12 @@ body {
 .explore {
     text-align: left;
     margin: 100px 50px 20px 200px;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
 }
 
 #judul {
     text-align: center;
-    color: white;
+    color: #FBF4E2;
     font-size: 60px;
     margin: 70px 40px 20px 120px;
 }
