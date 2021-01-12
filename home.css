@@ -59,7 +59,7 @@ body {
 
 .navbar a {
     float: left;
-    padding: 20px 20px;
+    padding: 20px 10px;
     color: black;
     text-decoration: none;
     font-size: 17px;
@@ -68,6 +68,9 @@ body {
     margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 200px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: bold;
+	color: #3E7B65;
 }
 
 .search a {
@@ -124,7 +127,8 @@ body {
 .explore {
     text-align: left;
     margin: 100px 50px 20px 200px;
-    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: bold;
 }
 
 #judul {
