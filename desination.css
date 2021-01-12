@@ -1,11 +1,13 @@
     body {
-        background-image: url("image/desination.png");
+        /*background-image: url("image/desination.png");*/
+		background-color: #FBF4E2;
         height: 90%;
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
         font-family: Arial, Helvetica, sans-serif;
         padding-bottom: 10px;
+		overflow: hidden;
     }
     
     .navbar a {
@@ -71,14 +73,43 @@
     .active {
         background-color: #EDB000;
     }
-    
+.background{
+	position: absolute;
+	z-index: -1;
+}
+#cornergreen{
+	width: 15%;
+    height: auto;
+	left: -4%;
+    top: -3%;
+	z-index: -2;
+}
+#cornergold{
+	width: 15%;
+    height: auto;
+	left: -3%;
+    top: -5%;
+}
+#goldring{
+	width: 50%;
+    height: auto;
+	left: 7%;
+    top: 18%;
+	z-index: -2;
+}    
+#greenshape{
+	width: 140%;
+    height: auto;	
+	left:-3%;
+	top:20%;
+}
     #gambar1,
     #gambar2,
     #gambar3 {
         float: center;
         width: 300px;
         flex: space-evenly;
-        margin-top: 200px;
+        margin-top: 190px;
         margin-bottom: 20px;
         margin-right: 0px;
         margin-left: 100px;
