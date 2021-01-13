@@ -1,13 +1,71 @@
-html, body {margin: 0; height: 100%; overflow: hidden}/*ben gak scroll page e*/
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+/*
+html, body {margin: 0; height: 100%; overflow: hidden}/*ben gak scroll page e
 body {
 	background-color: #FBF4E2;
-    height: 90%;
+    height: 100%;
     background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 20px;
 }
+*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    z-index: 100;
+    transition: 0.6s;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #EDB000;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #EDB000;
+    font-weight: 300;
+    transition: 0.6s;
+}
+
+header ul li a:hover{
+    color: #3E7B65;
+}
+
 .background{
 	position: absolute;
 	z-index: -1;
@@ -31,6 +89,7 @@ body {
 	left: -4%;
     top: 64%;
 }
+/*
 #cornergreen{
 	width: 15%;
     height: auto;
@@ -44,6 +103,7 @@ body {
 	left: -3%;
     top: -5%;
 }
+*/
 #papumabg{
 	width: 35%;
     height: auto;
@@ -56,7 +116,7 @@ body {
 	left: 56.25%;
     top: 32.5%;
 }
-
+/*
 .navbar a {
     float: left;
     padding: 20px 10px;
@@ -72,7 +132,7 @@ body {
 	font-weight: bold;
 	color: #3E7B65;
 }
-
+*/
 .search a {
     float: center;
     padding: 30px;
@@ -126,8 +186,7 @@ body {
 
 .explore {
     text-align: left;
-    margin: 100px 50px 20px 200px;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    margin: 140px 50px 20px 200px;
 	font-weight: bold;
 }
 
