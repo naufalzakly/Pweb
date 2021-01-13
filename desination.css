@@ -141,19 +141,7 @@
 	position: absolute;
 	z-index: -1;
 }
-#cornergreen{
-	width: 15%;
-    height: auto;
-	left: -4%;
-    top: -3%;
-	z-index: -2;
-}
-#cornergold{
-	width: 15%;
-    height: auto;
-	left: -3%;
-    top: -5%;
-}
+
 #goldring{
 	width: 50%;
     height: auto;
@@ -173,7 +161,7 @@
         float: center;
         width: 300px;
         flex: space-evenly;
-        margin-top: 190px;
+        margin-top: 300px;
         margin-bottom: 20px;
         margin-right: 0px;
         margin-left: 100px;
