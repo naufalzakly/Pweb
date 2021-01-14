@@ -80,38 +80,7 @@ header ul li a:hover{
     height: auto;
     top: 60%;
 }
-
-#Logo {
-    float: center;
-    width: 180px;
-    background-position: center;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    margin-right: 30px;
-    margin-left: 550px;
-}
-
-#nuansa {
-    float: center;
-    color: #3E7B65;
-    margin-right: 30px;
-    margin-left: 550px;
-    text-align: center;
-    font-style: bold;
-    font-size: 36pt;
-}
-
-#info {
-    color: #FBF4E2;
-    text-align: center;
-    font-style: bold;
-    font-size: 24pt;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-right: 30px;
-    margin-left: 450px;
-}
-
+/*
 .navbar a {
     float: left;
     padding: 20px 20px;
@@ -124,7 +93,7 @@ header ul li a:hover{
     margin-right: 10px;
     margin-left: 200px;
 }
-
+*/
 .search a {
     float: center;
     padding: 30px;
@@ -171,14 +140,58 @@ header ul li a:hover{
     transition: 0.40s;
     display: inline-block;
 }
+#Logo {
+    position: relative;
+    display: flex;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    /*
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 550px;
+    */
+}
+
+#nuansa {
+    /*
+    float: center;
+    margin-right: 30px;
+    margin-left: 550px;
+    text-align: center;
+    */
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: bold;
+    font-size: 36pt;
+    color: #3E7B65;
+}
+
+#info {
+    color: #FBF4E2;
+    text-align: center;
+    font-style: bold;
+    font-size: 24pt;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .icons {
-    position: absolute;
+    position: relative;
     top: 60%;
     transform: translateY(-10%);
-    width: 50%;
-    text-align: center;
-    margin: 70px 40px 20px 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
 }
 
 .icons a {
