@@ -1,4 +1,4 @@
-    @import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
 *
 {
     margin: 0;
@@ -20,55 +20,55 @@
 		overflow: hidden;
     }
 */
-    header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 60px;
-        z-index: 100;
-        transition: 0.6s;
-    }
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    z-index: 100;
+    transition: 0.6s;
+}
     
-    header .logo{
-        position: relative;
-        font-weight: 700;
-        color: #EDB000;
-        text-decoration: none;
-        font-size: 2em;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        transition: 0.6s;
-    }
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #EDB000;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
     
-    header ul{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #EDB000;
+    font-weight: 300;
+    transition: 0.6s;
+}
     
-    header ul li {
-        position: relative;
-        list-style: none;
-    }
-    
-    header ul li a{
-        position: relative;
-        margin: 0 15px;
-        text-decoration: none;
-        letter-spacing: 2px;
-        color: #EDB000;
-        font-weight: 300;
-        transition: 0.6s;
-    }
-    
-    header ul li a:hover{
-        color: #3E7B65;
-    }
+header ul li a:hover{
+    color: #3E7B65;
+}
     /*
     .navbar a {
         float: left;
@@ -106,35 +106,35 @@
     */
 
     
-    .search input[type=text] {
-        padding: 2px;
-        background: none;
-        text-align: center;
-        font-size: 18pt;
-        margin: 20px 10px 40px;
-        border: 5px solid #ccc92e;
-        width: 200px;
-        outline: none;
-        color: black;
-        border-radius: 24px;
-        transition: 0.40s;
-        display: inline-block;
-    }
+.search input[type=text] {
+    padding: 2px;
+    background: none;
+    text-align: center;
+    font-size: 18pt;
+    margin: 20px 10px 40px;
+    border: 5px solid #ccc92e;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.40s;
+    display: inline-block;
+}
     
-    .search button[type=submit] {
-        padding: 2px;
-        background: none;
-        text-align: center;
-        font-size: 18pt;
-        margin: 20px 10px 40px;
-        border: 5px solid #ccc92e;
-        width: 50px;
-        outline: none;
-        color: black;
-        border-radius: 24px;
-        transition: 0.40s;
+.search button[type=submit] {
+    padding: 2px;
+    background: none;
+    text-align: center;
+    font-size: 18pt;
+    margin: 20px 10px 40px;
+    border: 5px solid #ccc92e;
+    width: 50px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.40s;
         display: inline-block;
-    }
+}
     
 
 .background{
@@ -155,30 +155,96 @@
 	left:-3%;
 	top:20%;
 }
-    #gambar1,
-    #gambar2,
-    #gambar3 {
-        float: center;
-        width: 300px;
-        flex: space-evenly;
-        margin-top: 300px;
-        margin-bottom: 20px;
-        margin-right: 0px;
-        margin-left: 100px;
-        border-radius: 50%;
-        border: 9px solid #EDB000;
-    }
-    
-    .foto button[type=submit] {
-        padding: 2px;
-        background: none;
-        margin-top: 110px;
-        margin-bottom: 100px;
-        margin-right: 0px;
-        margin-left: 10px;
-        border-radius: 50%;
-        width: 50px;
-        color: black;
-        border-radius: 24px;
-        border: 9px solid #EDB000;
-    }
+/*
+#gambar1,
+#gambar2,
+#gambar3 {
+    float: center;
+    width: 300px;
+    flex: space-evenly;
+    margin-top: 300px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 100px;
+    border-radius: 50%;
+    border: 9px solid #EDB000;
+}
+*/
+.teamBx{
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 20%;
+}
+
+.teamBx .member{
+    position: relative;
+    background: #000;
+    min-height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 9px solid #EDB000;
+}
+
+.teamBx .member .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+
+}
+
+.teamBx .member .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.teamBx .member .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.teamBx .member:hover .details{
+    opacity: 1;
+}
+
+.teamBx .member .details h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.foto button[type=submit] {
+    padding: 2px;
+    background: none;
+    margin-top: 110px;
+    margin-bottom: 100px;
+    margin-right: 0px;
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 50px;
+    color: black;
+    border-radius: 24px;
+    border: 9px solid #EDB000;
+}
