@@ -26,6 +26,14 @@ body {
     left: -1%;
 }
 
+#goldring{
+	width: 50%;
+    height: auto;
+	left: 65%;
+    top: 70%;
+	z-index: -2;
+}   
+
 .button {
     background-color: #EDB000;
     border: none;
