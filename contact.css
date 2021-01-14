@@ -141,11 +141,11 @@ header ul li a:hover{
     display: inline-block;
 }
 #Logo {
-    position: relative;
-    display: flex;
     width: 180px;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
     /*
     margin-top: 100px;
     margin-bottom: 20px;
