@@ -53,9 +53,9 @@
     <header id="header">
         <a href="#" class="logo"></i> NUANSA.CO</a>
         <ul>
-            <li><a href="index.html"><i class="fa fa-fw fa-home"></i> HOME</a></li>
-            <li><a href="desination.html"><i class="fa fa-fw fa-plane"></i> DESTINATION</a></li>
-            <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> CONTACT</a></li>
+            <li><a href="index.php"><i class="fa fa-fw fa-home"></i> HOME</a></li>
+            <li><a href="desination.php"><i class="fa fa-fw fa-plane"></i> DESTINATION</a></li>
+            <li><a href="contact.php"><i class="fa fa-fw fa-envelope"></i> CONTACT</a></li>
             <li><a href="formlogin.php"><i class="fas fa-sign-in-alt"></i> JOIN US</a></li>
         </ul>
         <div class="search">
@@ -90,7 +90,7 @@
             </div>
             <div class=details>
                 <div>
-                    <a href="wisata.html"><h2>Teluk Love</h2></a>
+                    <a href="wisata.php"><h2>Teluk Love</h2></a>
                 </div>
             </div>    
         </div>
@@ -100,7 +100,7 @@
             </div>
             <div class=details>
                 <div>
-                    <a href="wisata.html"><h2>Air Terjun Tancak</h2></a>
+                    <a href="wisata.php"><h2>Air Terjun Tancak</h2></a>
                 </div>
             </div>
         </div>
@@ -110,7 +110,7 @@
             </div>
             <div class=details>
                 <div>
-                    <a href="wisata.html"><h2>Taman Botani</h2></a>
+                    <a href="wisata.php"><h2>Taman Botani</h2></a>
                 </div>
             </div>  
         </div>
