@@ -3,12 +3,12 @@ session_start();
 require 'fuction.php';
 
 //cek cookie
-if(isset($_COOKIE['number']) && isset($_COOKIE['key'])){
-  $number = $_COOKIE['number'];
+if(isset($_COOKIE['id']) && isset($_COOKIE['key'])){
+  $id = $_COOKIE['id'];
   $key = $_COOKIE['key'];
 
   //ambil username berdasarkan no
-  $result = mysqli_query($conn, "SELECT username FROM user WHERE no = $number");
+  $result = mysqli_query($conn, "SELECT username FROM user WHERE Id = $id");
   $row = mysqli_fetch_assoc($result);
 
   //cek cookie dan username
@@ -44,7 +44,7 @@ if( isset($_POST["login"]) ) {
       if (isset($_POST["rememberme"])){
 
         //set cookies
-        setcookie('number', $row['id'], time()+60);
+        setcookie('id', $row['Id'], time()+60);
         setcookie('key', hash('sha256',$row['username'], time()+60));
       }
       header("Location: index.php");
