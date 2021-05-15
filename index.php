@@ -1,3 +1,14 @@
+<?php
+session_start(); 
+if(!isset($_SESSION["login"])){
+    header("Location: formlogin.php");
+    exit;
+}
+require 'fuction.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -18,6 +29,8 @@
             <li><a href="desination.php"><i class="fa fa-fw fa-plane"></i> DESTINATION</a></li>
             <li><a href="contact.php"><i class="fa fa-fw fa-envelope"></i> CONTACT</a></li>
             <li><a href="formlogin.php"><i class="fas fa-sign-in-alt"></i> JOIN US</a></li>
+            <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> LOG OUT</a></li>
+
 
 
         </ul>

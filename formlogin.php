@@ -1,5 +1,27 @@
 <?php 
+session_start();
 require 'fuction.php';
+
+//cek cookie
+if(isset($_COOKIE['number']) && isset($_COOKIE['key'])){
+  $number = $_COOKIE['number'];
+  $key = $_COOKIE['key'];
+
+  //ambil username berdasarkan no
+  $result = mysqli_query($conn, "SELECT username FROM user WHERE no = $number");
+  $row = mysqli_fetch_assoc($result);
+
+  //cek cookie dan username
+  if( $key === hash('sha256', $row['username'])){
+    $_SESSION['login'] = true;
+  }
+}
+
+
+if ( isset($_SESSION["login"])){
+  header("Location: index.php");
+  exit;
+}
 
 if( isset($_POST["login"]) ) {
 
@@ -14,7 +36,18 @@ if( isset($_POST["login"]) ) {
 		// cek password
 		$row = mysqli_fetch_assoc($result);
 		if( password_verify($password, $row["password"]) ) {
-			header("Location: index.php");
+			
+      //set session
+      $_SESSION["login"] = true;
+
+      //set Rememberme
+      if (isset($_POST["rememberme"])){
+
+        //set cookies
+        setcookie('number', $row['id'], time()+60);
+        setcookie('key', hash('sha256',$row['username'], time()+60));
+      }
+      header("Location: index.php");
 			exit;
 		}
 	}
@@ -66,12 +99,19 @@ if( isset($_POST["login"]) ) {
         <input id="user-name" class="form-content" type="text" name="username" required />
         <div class="form-border"></div>
 
-        <label for="user-password" style="padding-top:22px">&nbsp;Password </label>
+        <label for="user-password" style="padding-top:10px">&nbsp;Password </label>
         <input id="user-password" class="form-content" type="password" name="password" required />
         <div class="form-border"></div>
+        <br>
+        <div>
+          <input id="rememberme"  type="checkbox" name="rememberme" />
+          <label for="rememberme" >Remember Me </label>
+        </div>
+
         <a href="lupa_pass.html">
           <legend id="forgot-pass">Forgot password?</legend>
         </a>
+
         <input id="submit-btn" type="submit" name="login" value="LOGIN" />
         <a href="registrasi.php" id="signup">Don't have account yet?</a>
       </form>
