@@ -8,14 +8,10 @@
     overflow: hidden;
 }
 
-body {
-  background-color:( #3E7B65);
-  
-}
 #greenrectangle{
 	width: 100%;
-    height: auto;
-    top: 60%;
+  height: auto;
+  top: 60%;
 }
 label {
   font-family: "Raleway", sans-serif;
